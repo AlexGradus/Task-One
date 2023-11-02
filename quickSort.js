@@ -17,12 +17,12 @@ function quickSort(arr) {
   return [...quickSort(left), middleElem, ...quickSort(right)];
 }
 
-const arr = [];
+const unsortedElements = [];
 
 for (let i = 0; i < 100000; i++) {
-  arr.push(Math.floor(Math.random() * 1000000));
+  unsortedElements.push(Math.floor(Math.random() * 1000000));
 }
 
 console.time("quickSort");
-const sortedArray = quickSort(arr);
+const sortedArray = quickSort(unsortedElements);
 console.timeEnd("quickSort");

@@ -10,12 +10,12 @@ function bubbleSort(arr) {
   }
 }
 
-const arr = [];
+const unsortedElements = [];
 
 for (let i = 0; i < 100000; i++) {
-  arr.push(Math.floor(Math.random() * 1000000));
+  unsortedElements.push(Math.floor(Math.random() * 1000000));
 }
 
 console.time("bubbleSort");
-bubbleSort(arr);
+bubbleSort(unsortedElements);
 console.timeEnd("bubbleSort");
