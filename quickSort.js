@@ -24,5 +24,5 @@ for (let i = 0; i < 100000; i++) {
 }
 
 console.time("quickSort");
-const sortedArray = quickSort(unsortedElements);
+const sortedElements = quickSort(unsortedElements);
 console.timeEnd("quickSort");
